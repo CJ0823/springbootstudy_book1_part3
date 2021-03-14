@@ -9,7 +9,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-@ToString
+@ToString(exclude = "board1")
 public class Reply extends BaseEntity{
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
